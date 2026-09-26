@@ -1,79 +1,100 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Phiếu đăng ký khóa học</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC STORE - Trang chủ</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
- 
-<div class="form-wrap">
- 
-  <div class="form-header">
-    <h1>📘 Phiếu đăng ký khóa học 📘</h1>
-  </div>
- 
-  <form id="formDangKy">
-    <div class="form-body">
- 
-      <div class="form-row">
-        <label for="hoTen">Họ và tên*</label>
-        <div class="field">
-          <input type="text" id="hoTen" name="hoTen" required>
-        </div>
-      </div>
- 
-      <div class="form-row">
-        <label for="soDienThoai">Số điện thoại*</label>
-        <div class="field">
-          <input type="tel" id="soDienThoai" name="soDienThoai" required>
-        </div>
-      </div>
- 
-      <div class="form-row">
-        <label for="email">Email*</label>
-        <div class="field">
-          <input type="email" id="email" name="email" required>
-        </div>
-      </div>
- 
-      <div class="form-row">
-        <label for="khoaHoc">Chọn khóa học</label>
-        <div class="field">
-          <select id="khoaHoc" name="khoaHoc">
-            <option value="Web">Web</option>
-            <option value="Mobile App">Mobile App</option>
-            <option value="Data Science">Data Science</option>
-            <option value="Thiết kế đồ họa">Thiết kế đồ họa</option>
-          </select>
-        </div>
-      </div>
- 
-      <div class="form-row">
-        <label>Hình thức học</label>
-        <div class="field radio-field">
-          <label class="radio-label"><input type="radio" id="radioTrucTiep" name="hinhThuc" value="Trực tiếp" checked> Trực tiếp</label>
-          <label class="radio-label"><input type="radio" id="radioOnline" name="hinhThuc" value="Học online"> Học online</label>
-        </div>
-      </div>
- 
-      <div class="form-row">
-        <label for="ghiChu">Ghi chú thêm</label>
-        <div class="field">
-          <textarea id="ghiChu" name="ghiChu" rows="4"></textarea>
-        </div>
-      </div>
- 
+
+<header>
+    <div class="logo">⚡ PC<span>STORE</span></div>
+
+    <nav>
+        <a class="active" href="index.html">Trang chủ</a>
+        <a href="register.html">Đăng ký</a>
+        <a href="features.html">Dòng máy</a>
+        <a href="products.html">Sản phẩm</a>
+        <a href="cart.html">🛒 Giỏ hàng</a>
+        <a href="contact.html">Liên hệ</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <p class="tag">PC GAMING • WORK • CREATIVE</p>
+
+        <h1>
+            Build chiếc PC<br>
+            <span>đúng với bạn</span>
+        </h1>
+
+        <p>
+            PC hiệu năng cao, linh kiện chính hãng,
+            cấu hình tối ưu cho học tập, gaming và công việc.
+        </p>
+
+        <a class="btn" href="products.html">
+            Xem sản phẩm →
+        </a>
     </div>
- 
-    <div class="form-footer">
-      <button type="submit" id="btnDangKy">Đăng ký</button>
+
+    <div class="hero-pc">
+        🖥️
     </div>
-  </form>
- 
-</div>
- 
+</section>
+
+<section class="section">
+
+    <h2>Vì sao chọn PC STORE?</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>⚙️ Cấu hình tối ưu</h3>
+            <p>
+                Tư vấn cấu hình phù hợp với nhu cầu
+                và ngân sách của khách hàng.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🛡️ Linh kiện chính hãng</h3>
+            <p>
+                Sản phẩm chất lượng, nguồn gốc rõ ràng.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🚀 Hiệu năng mạnh</h3>
+            <p>
+                Chơi game, học tập và làm việc mượt mà.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <h2>PC nổi bật</h2>
+
+    <div class="product-grid" id="featured"></div>
+
+</section>
+
+<footer>
+    © 2026 PC STORE | Hotline: 0999999999
+</footer>
+
 <script src="script.js"></script>
+
+<script>
+    renderFeatured();
+</script>
+
 </body>
 </html>
